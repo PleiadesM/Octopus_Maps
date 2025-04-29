@@ -1,5 +1,6 @@
 {
   "name": "package.json",
+  "homepage": "https://pleiadesm.github.io/Octopus_Maps/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
