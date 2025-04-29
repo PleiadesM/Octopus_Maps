@@ -1,1 +1,0 @@
-This is the course practice of Daocheng Lin for ENGL 5050, User Experience Architecture and Testing. The research project is credited to the whole team: Xingyu Lan, Yifan Wang, Yutong Yang. Special thanks for Dr. Eric's instruction.
