@@ -8,5 +8,5 @@ export default defineConfig({
     vue(),
     tailwindcss(),
   ],
-  base:"oct_maps/",
+  base:"octopus_maps/",
 })
