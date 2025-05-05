@@ -2,6 +2,8 @@
 ! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
@@ -46,7 +48,7 @@ html,
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Source Sans 3", Helvetica, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -98,7 +100,12 @@ Remove the default font size and weight for headings.
 
 h1,
 h2,
-h3,
+h3 {
+  font-family: "Playfair Display", serif;
+  font-size:inherit;
+  font-weight: 400;
+}
+
 h4,
 h5,
 h6 {
@@ -578,34 +585,35 @@ html {
 
 [data-theme=retro] {
   color-scheme: light;
-  --color-base-100: oklch(91.637% 0.034 90.515);
-  --color-base-200: oklch(88.272% 0.049 91.774);
-  --color-base-300: oklch(84.133% 0.065 90.856);
-  --color-base-content: oklch(41% 0.112 45.904);
-  --color-primary: oklch(0.65 0.197 37.6);
-  --color-primary-content: oklch(98% 0.026 102.212);
-  --color-secondary: oklch(92% 0.084 155.995);
-  --color-secondary-content: oklch(44% 0.119 151.328);
-  --color-accent: oklch(68% 0.162 75.834);
-  --color-accent-content: oklch(41% 0.112 45.904);
-  --color-neutral: oklch(21% 0.006 56.043);
-  --color-neutral-content: oklch(86% 0.005 56.366);
-  --color-info: oklch(58% 0.158 241.966);
-  --color-info-content: oklch(96% 0.059 95.617);
-  --color-success: oklch(51% 0.096 186.391);
-  --color-success-content: oklch(96% 0.059 95.617);
-  --color-warning: oklch(57% 0.245 27.325);
-  --color-warning-content: oklch(96% 0.059 95.617);
-  --color-error: oklch(70% 0.191 22.216);
-  --color-error-content: oklch(40% 0.123 38.172);
-  --radius-selector: 0.25rem;
-  --radius-field: 0.25rem;
-  --radius-box: 0.5rem;
-  --size-selector: 0.25rem;
-  --size-field: 0.25rem;
-  --border: 1px;
-  --depth: 0;
-  --noise: 0;
+  --inc: 90.923% 0.043042 262.880917;
+  --suc: 12.541% 0.033982 149.213788;
+  --wac: 13.3168% 0.031484 58.31834;
+  --erc: 13.144% 0.0398 27.33;
+  --animation-btn: 0.25s;
+  --animation-input: .2s;
+  --btn-focus-scale: 0.95;
+  --border-btn: 1px;
+  --tab-border: 1px;
+  --p: 76.8664% 0.104092 22.664655;
+  --pc: 26.5104% 0.006243 0.522862;
+  --s: 80.7415% 0.052534 159.094608;
+  --sc: 26.5104% 0.006243 0.522862;
+  --a: 70.3919% 0.125455 52.953428;
+  --ac: 26.5104% 0.006243 0.522862;
+  --n: 28.4181% 0.009519 355.534017;
+  --nc: 92.5604% 0.025113 89.217311;
+  --b1: 91.6374% 0.034554 90.51575;
+  --b2: 88.2722% 0.049418 91.774344;
+  --b3: 84.133% 0.065952 90.856665;
+  --bc: 26.5104% 0.006243 0.522862;
+  --in: 54.615% 0.215208 262.880917;
+  --su: 62.7052% 0.169912 149.213788;
+  --wa: 66.584% 0.157422 58.31834;
+  --er: 65.72% 0.199 27.33;
+  --rounded-box: 0.4rem;
+  --rounded-btn: 0.4rem;
+  --rounded-badge: 0.4rem;
+  --tab-radius: 0.4rem;
 }
 
 [data-theme=coffee] {
@@ -1907,4 +1915,61 @@ html {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+@layer components {
+  .hero {
+      box-sizing:content-box;
+      aspect-ratio: 3/2;
+      width: var(--container-md);
+      height:var(--container-md);
+      background-size: cover;
+      border-radius: var(--radius-3xl);
+  }
+
+  .section-bg {
+      box-sizing:border-box;
+      width:100dvw;
+      height:auto;
+      background-size:cover;
+      padding-inline: calc(var(--spacing) * 40);
+      padding-block: calc(var(--spacing) * 16);
+      margin-block: calc(var(--spacing) * 16);
+  }
+
+  .section-card {
+      box-sizing:border-box;
+      padding: calc(var(--spacing) * 24);
+      background-color:  #faf8efdc;
+      size:fit-content;
+      box-shadow: var(--shadow-xl);
+  }
+
+  .card {
+    background-color: var(--color-white);
+    border-radius: var(--rounded-lg);
+    padding: var(--spacing-6);
+    box-shadow: var(--shadow-xl);
+  }
+
+  .orangebtn {
+      box-sizing:border-box;
+      padding-inline: calc(var(--spacing) * 4);
+      padding-block: calc(var(--spacing) * 2);
+      background-color: var(--color-flame);
+      color:var(--color-flora-white);
+      border-radius: var(--radius-lg);
+      border-width: 2px;
+      border-style: solid;
+      border-color: transparent;
+      &:hover {
+          transition-property: color,border-color;
+          transition-duration: 300ms;
+          transition-timing-function: var(--default-transition-timing-function);
+          background-color:transparent;
+          color:#EE5622;
+          border-color: var(--color-flame);
+      }
+
+  }
 }

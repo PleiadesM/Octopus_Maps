@@ -3,6 +3,10 @@ module.exports = {
   content: ["./src/**/*.{html,md,njk,js}"],
   theme: {
     extend: {},
+    // fontFamily: {
+    //   heading: ['"Abril Fatface"', 'cursive', "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"], // for h1, h2, h3
+    //   sans: ['Poppins', 'ui-sans-serif', 'system-ui', "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"], // body text
+    // },
   },
   plugins: [require("@tailwindcss/typography"), require("daisyui")],
   daisyui: {
