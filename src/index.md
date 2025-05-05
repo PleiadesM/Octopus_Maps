@@ -1,6 +1,6 @@
 ---
 layout: layouts/base.html
-title: homepage
+title: Octopus Map Project.
 ---
 
 # Trying Markdown
@@ -8,3 +8,5 @@ title: homepage
 Just some paragraph text like you know it is. 
 
 <button class="btn btn-primary">Click Me</button>
+
+{% include "swiper.html" %}
