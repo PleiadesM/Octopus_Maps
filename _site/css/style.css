@@ -1,5 +1,9 @@
 @import url(./input.css);
 
+@theme {
+    --font-playfair: "Playfair Display", serif; 
+  }
+
 @layer components {
     .hero {
         box-sizing:content-box;
