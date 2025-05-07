@@ -79,3 +79,6 @@ title: Octopus Maps Home
   </article>
 
 </section>
+
+{% include "swiper.html" %}
+
