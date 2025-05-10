@@ -2,6 +2,9 @@
 layout: layouts/default.njk
 title: Octopus Maps Home
 ---
+
+{% include "swiper.html" %}
+
 <section
   class="hero min-h-150"
   style="background-image: url(/assets/img/war.webp);"
@@ -79,6 +82,3 @@ title: Octopus Maps Home
   </article>
 
 </section>
-
-{% include "swiper.html" %}
-

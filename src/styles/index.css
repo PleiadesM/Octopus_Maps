@@ -13,9 +13,8 @@
 @layer components {
   .hero {
       box-sizing:content-box;
-      aspect-ratio: 3/2;
-      width: var(--container-md);
-      height:var(--container-md);
+      flex-basis: calc(var(--spacing) * 128);
+      height:var(--container-xs);
       background-size: cover;
       border-radius: var(--radius-3xl);
   }
