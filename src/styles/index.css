@@ -2,16 +2,20 @@
 @import 'tailwindcss';
 @plugin "@tailwindcss/typography";
 @plugin "daisyui" {
-  themes: autumn --default, autumn --prefersdark;
+  themes: silk --default, autumn --prefersdark;
 }
 @layer base {
   h1, h2, h3, h4, h5, h6 {
     font-family: "Playfair Display", serif;
   }
+
+  p{
+    font-family: "Poppins", sans-serif;
+  }
 }
 
 @layer components {
-  .hero {
+  .swiper {
       box-sizing:content-box;
       flex-basis: calc(var(--spacing) * 128);
       height:var(--container-xs);
@@ -19,14 +23,10 @@
       border-radius: var(--radius-3xl);
   }
 
-  .section-bg {
-      box-sizing:border-box;
-      width:100dvw;
-      height:auto;
-      background-size:cover;
-      padding-inline: calc(var(--spacing) * 40);
-      padding-block: calc(var(--spacing) * 16);
-      margin-block: calc(var(--spacing) * 16);
+  .sectionbg {
+    box-sizing:content-box;
+    flex-basis: calc(var(--spacing) * 128);
+    background-size: cover;
   }
 
   .section-card {
