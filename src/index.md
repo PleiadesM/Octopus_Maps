@@ -7,9 +7,7 @@ title: Octopus Maps Home
   <h1 class="text-3xl font-bold">Our Research</h1>
 </section>
 
-<section class="hidden sm:block">
 {% include "swiper.html" %}
-</section>
 
 <section
   class="hero min-h-150"
