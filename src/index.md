@@ -7,13 +7,64 @@ title: Octopus Maps Home
   <h1 class="text-3xl font-bold">Our Research</h1>
 </section>
 
-<section class="hidden sm:block">
-{% include "swiper.html" %}
-</section>
-
-<section class="sm:hidden">
-{% include "mhero.html" %}
-</section>
+<section class="flex flex-row w-dvw py-16 px-[min(5vw,40)] justify-center items-center place-content-between -space-x-20 translate-x-105">
+    <div class="order-4 peer/swiper4 group bg-[url(/assets/img/guerre.webp)] swiper
+    bg-gray-300 bg-blend-multiply transition-transform duration-300 ease-in-out 
+    scale-82 -translate-x-130 
+    hover:scale-100 
+    peer-hover/swiper1:scale-70 
+    peer-hover/swiper3:scale-95 peer-hover/swiper3:z-20
+    z-10 hover:z-40">
+     <a href="#" class="absolute w-full h-full top-0 left-0 rounded-3xl bg-linear-to-t from-gray-900 to-gray-50/0 opacity-0 transition-opacity duration-300 hover:opacity-40 z-40">
+     </a>
+     <h6 class="absolute text-white bottom-4 left-4 opacity-0 transition duration-300 ease-in-out group-hover:opacity-100 z-40">
+       Dataset
+     </h6>
+      <!-- Because I used the background function instead of images, I used "sr-only" to add the alt texts. -->
+     <span class="sr-only">Image: an octopus map made in 1920s with rich cartographic information.</span>
+   </div>
+    <div class="order-1 peer/swiper1 group bg-[url(/assets/img/polyp.webp)] swiper
+    bg-gray-300 bg-blend-multiply 
+    transition-transform duration-300 ease-in-out 
+    scale-90 hover:scale-100
+    peer-hover/swiper4:scale-70 peer-hover/swiper4:z-10
+    z-30 hover:z-40">
+      <a href="#" class="absolute w-full h-full top-0 left-0 rounded-3xl bg-linear-to-t from-gray-900 to-gray-50/0 opacity-0 transition-opacity duration-300 hover:opacity-40 z-20">
+      </a>
+      <h6 class="absolute text-white bottom-4 left-4 opacity-0 transition duration-300 ease-in-out group-hover:opacity-100 z-20">
+        Full Article
+      </h6>
+      <span class="sr-only">Image: a German poster with the octopus and Isranian warrior battling on a globe.</span>
+    </div>
+    <div class="order-3 peer/swiper3 group bg-[url(/assets/img/curse.webp)] swiper
+    bg-gray-300 bg-blend-multiply transition-transform duration-300 ease-in-out 
+    scale-90 -translate-x-80 hover:scale-100 
+    peer-hover/swiper1:scale-80 
+    peer-hover/swiper4:scale-90 peer-hover/swiper4:z-30
+    z-20 hover:z-40">
+      <a href="#" class="absolute w-full h-full top-0 left-0 rounded-3xl bg-linear-to-t from-gray-900 to-gray-50/0 opacity-0 transition-opacity duration-300 hover:opacity-40 z-40">
+      </a>
+      <h6 class="absolute text-white bottom-4 left-4 opacity-0 transition duration-300 ease-in-out group-hover:opacity-100 z-40">
+        Conceptual Metaphors in Octopus Maps
+      </h6>
+      <span class="sr-only">Image: a cover of a fantasy novel created in the late 19th century, with a giant octopus attacking the ship.</span>
+    </div>
+    <div class="order-2 peer/swiper2 group bg-[url(/assets/img/serio.webp)] swiper
+     bg-gray-300 bg-blend-multiply  
+     transition-transform duration-300 ease-in-out 
+     scale-100 -translate-x-40 hover:scale-100
+     peer-hover/swiper1:z-30 peer-hover/swiper1:scale-90 
+     peer-hover/swiper3:scale-95 peer-hover/swiper3:z-30
+     peer-hover/swiper4:scale-80 peer-hover/swiper4:z-20
+     z-40 hover:z-40">
+      <a href="#" class="absolute w-full h-full top-0 left-0 rounded-3xl bg-linear-to-t from-gray-900 to-gray-50/0 opacity-0 transition-opacity duration-300 hover:opacity-60 z-30">
+      </a>
+      <h6 class="absolute text-white bottom-4 left-4 opacity-0 transition duration-300 ease-in-out group-hover:opacity-100 z-40">
+        Browse the Full Corpus
+      </h6>
+      <span class="sr-only">Image: A famous octopus map by F.W. Rose in 1870, with the Russian depicted as an giant octopus on the top of the map, and the other European countries are depicted as different people.</span>
+    </div>
+  </section>
 
 <section
   class="hero min-h-150"
