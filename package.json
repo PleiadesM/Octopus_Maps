@@ -2,7 +2,7 @@
   "name": "octopus-maps-project",
   "version": "1.0.0",
   "description": "",
-  "main": "index.md",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "eleventy --serve",
