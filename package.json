@@ -1,5 +1,6 @@
 {
   "name": "octopus-maps-project",
+  "homepage": "https://pleiadesm.github.io/Octopus_Maps/",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
