@@ -1174,6 +1174,9 @@
   .bg-\[url\(\.\/assets\/img\/polyp\.webp\)\] {
     background-image: url(./assets/img/polyp.webp);
   }
+  .bg-\[url\(\.\/assets\/img\/serio\.webp\)\] {
+    background-image: url(./assets/img/serio.webp);
+  }
   .bg-\[url\(\/assets\/img\/curse\.webp\)\] {
     background-image: url(/assets/img/curse.webp);
   }
