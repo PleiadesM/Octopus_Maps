@@ -49,6 +49,17 @@ This is a fairly standard implementation with only a few customizations. Below a
 
 ## Logs
 
+### 11th May, 2025
+
+#### Update
++ Successfully deploy the page on GitHub. I did two things:
+    1. **Add gh-pages plugin:** Use the plugin, gh-pages to create an individual branch `gh-pages` that only put the files of `dist` folder in the main branch in it. Then, I set the "gh-pages" as the branch that host the website. In this workflow, there are only the *output files* in the `dist` folder, so I will need to output all the changes in the *input files* everytime. To do this, I built `npm run deploy` function on the `package.json`. In this process, I got a clear idea on how 11ty contributes to the workflow of coding and reduces the cognitive load for human being: it's developed because of human's limited working memory.
+    2. **Fix the path of css and images:** I change the path of `index.css` in `default.njk` from `/styles/index.css` to `./style/index.css`. Then it works. I'm not quite sure how the path works, it seems that the former path indicate the root folder and the latter path indicate the current folder.
+        + I change the background images of the swiper from `bg-[url(/assets/img/images.webp)]` to `style="background-image: url(./assets/img/images.webp);"` The strange thing here is that I tried `bg-[url(./assets/img/images.webp)]` but it doesn't work. Really confused in this part. 
+
+#### To-DO
++ Build a responsive frontpage for the mobile phone.
+
 ### 10th May, 2025
 
 #### Update
