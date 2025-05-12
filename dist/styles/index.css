@@ -1165,6 +1165,15 @@
     }
     background-image: linear-gradient(var(--tw-gradient-stops));
   }
+  .bg-\[url\(\.\/assets\/img\/curse\.webp\)\] {
+    background-image: url(./assets/img/curse.webp);
+  }
+  .bg-\[url\(\.\/assets\/img\/guerre\.webp\)\] {
+    background-image: url(./assets/img/guerre.webp);
+  }
+  .bg-\[url\(\.\/assets\/img\/polyp\.webp\)\] {
+    background-image: url(./assets/img/polyp.webp);
+  }
   .bg-\[url\(\/assets\/img\/curse\.webp\)\] {
     background-image: url(/assets/img/curse.webp);
   }
