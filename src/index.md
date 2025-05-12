@@ -3,6 +3,8 @@ layout: layouts/default.njk
 title: Octopus Maps Home
 ---
 
+say something
+
 <section class= "flex pt-8 justify-center">
   <h1 class="text-3xl font-bold">Our Research</h1>
 </section>
