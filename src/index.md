@@ -53,7 +53,7 @@ title: Octopus Maps Home
       <span class="sr-only">Image: a cover of a fantasy novel created in the late 19th century, with a giant octopus attacking the ship.</span>
     </div>
 
-    <div class="order-2 peer/swiper2 group bg-[url./assets/img/serio.webp)] swiper
+    <div class="order-2 peer/swiper2 group bg-[url(./assets/img/serio.webp)] swiper
      bg-gray-300 bg-blend-multiply  
      transition-transform duration-300 ease-in-out 
      scale-100 -translate-x-40 hover:scale-100
